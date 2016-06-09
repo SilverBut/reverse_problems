@@ -1,8 +1,6 @@
 /*
- * For more reference about usage of AVX instructions in C.
- *
- * http://www.cnblogs.com/wangguchangqing/p/5466301.html
- * http://www.codeproject.com/Articles/874396/Crunching-Numbers-with-AVX-and-AVX
+ * For more reference about usage of AVX instructions in C,
+ * see Intel SDM.
  *
  */
 
@@ -17,7 +15,7 @@ int main(void){
 	float I[8][8];
 	char str[8*8+1];
 	printf("Show me your slogan:\n");
-	read(1, str, 64);
+	read(1, str, 65);
 	str[64]=0;
 	char ch;
 	for ( int i = 0 ; i < 8*8; i++ ){
@@ -51,7 +49,7 @@ int main(void){
 	//{103,32,105,115,58,99,112,99},
 	//{116,102,123,121,78,69,118,67},
 	//{115,98,97,105,121,54,68,125}}
-	//And M is listed above, so X supposed to be
+	//And M is listed above, so X should be
 	//X=M*I'=:
 	float X[8][8]=  {
 	{  5587.7698 ,  4997.9490  , 4449.5170 ,  4976.6199 ,  4953.1235 ,  4003.2397 ,  4272.6035  ,  379.0892},
@@ -72,7 +70,7 @@ int main(void){
 	
 	float temp[8]={0};
 	float sum;
-	__m256 ymm0, ymm1; //define the registers used
+	__m256 ymm0, ymm1;
 	for ( int i = 0 ; i < 8 ; i++ )
 		for ( int j = 0 ; j < 8 ; j++ )	{
 			ymm0 = __builtin_ia32_loadups256(I[i]); //load the 8 floats in a into ymm0
