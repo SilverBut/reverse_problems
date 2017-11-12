@@ -1,0 +1,8 @@
+[submodule "2015CM"]
+	path = 2015CM
+	url = github:SilverBut/2015CM
+	branch = master
+[submodule "2016CM"]
+	path = 2016CM
+	url = github:SilverBut/2016CM
+	branch = master
