@@ -6,3 +6,11 @@
 	path = 2016CM
 	url = github:SilverBut/2016CM
 	branch = master
+[submodule "LCTF2017_BeRealDriver"]
+	path = LCTF2017_BeRealDriver
+	url = github:SilverBut/LCTF2017_BeRealDriver
+	branch = master
+[submodule "LCTF2017_NuclearBomb"]
+	path = LCTF2017_NuclearBomb
+	url = github:SilverBut/LCTF2017_NuclearBomb
+	branch = master
