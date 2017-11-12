@@ -1,5 +1,7 @@
 # reverse_problems
-A repo to save some reverse problems writtem by myself.
+A repo to save some reverse problems written by myself.
+
+You may want to use `git clone --recursive [URL to Git repo]` to check out everything.
 
 ## Legal Statement
 
