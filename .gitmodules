@@ -14,3 +14,7 @@
 	path = LCTF2017_NuclearBomb
 	url = github:SilverBut/LCTF2017_NuclearBomb
 	branch = master
+[submodule "LCTF2017_YublKey"]
+	path = LCTF2017_YublKey
+	url = github:SilverBut/LCTF2017_YublKey
+	branch = master
